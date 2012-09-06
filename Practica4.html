@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Practica 4</title>
+	<meta name="description" content="Formulario Practica 4" />
+	<meta name="keywords" content="HTML5,Practica_4" />
+	<meta name="author" content="Oliver Castellanos" />
+	<meta charset="UTF-8" />
+</head>
+<body>
+	<h1>Formulario</h1>
+	<p>
+	En seguida se le presentará un formulario que deberá llenar para poder continuar con el registro.
+	</p>
+	<form method="post" action="Practica4.html">
+		<label for="nombre">Nombre</label>
+		<input type="text" id="nombre" name="nombre" required="required" placeholder="Ingrese su nombre" /><br />
+		<label for="mail">Correo</label>
+		<input type="email" id="mail" name="mail" required="required" placeholder="Ingrese su correo" /><br />
+		<label for="mail">Telefono</label>
+		<input type="tel" id="phone" name="phone" required="required" placeholder="Ingrese su telefono" /><br />
+		Estado
+		<select name="estado">
+			<option value="0">Aguascalientes</option>
+			<option value="1">Baja California</option>
+			<option value="2">Baja California Sur</option>
+			<option value="3">Campeche</option>
+			<option value="4">Chiapas</option>
+			<option value="5">Chihuahua</option>
+			<option value="6">Colima</option>
+			<option value="7">Distrito Federal</option>
+			<option value="8">Durango</option>
+			<option value="9">Guanajuato</option>
+			<option value="10">Guerrero</option>
+			<option value="11">Hidalgo</option>
+			<option value="12">Jalisco</option>
+			<option value="13">Mexico</option>
+			<option value="14">Michoacan</option>
+			<option value="15">Michoacan</option>
+			<option value="16">Morelos</option>
+			<option value="17">Nayarit</option>
+			<option value="18">Nuevo Leon</option>
+			<option value="19">Oaxaca</option>
+			<option value="20">Puebla</option>
+			<option value="21">Queretaro</option>
+			<option value="22">Quintana Roo</option>
+			<option value="23">San Luis Potosi</option>
+			<option value="24">Sinaloa</option>
+			<option value="25">Sonora</option>
+			<option value="26">Tabasco</option>
+			<option value="27">Tamaulipas</option>
+			<option value="28">Tlaxcala</option>
+			<option value="29">Veracruz</option>
+			<option value="30">Yucatan</option>
+			<option value="31">Zacatecas</option>
+		</select><br />
+		<label for="colonia">Colonia</label>
+		<input type="text" id="colonia" name="colonia" required="required" placeholder="Ingrese su colonia" /><br />
+		<label for="textarea">Comentarios</label><br />
+		<textarea id="textarea" rows="5" cols="40">Escriba aqui sus comentarios</textarea><br />
+		<fieldset>
+			<legend>Intereses:</legend>
+			<input type="checkbox" name="Peliculas" value="accion" />Accion<br />
+			<input type="checkbox" name="Peliculas" value="drama" />Drama<br />
+			<input type="checkbox" name="Peliculas" value="comedia" />Comedia<br />
+			<input type="checkbox" name="Peliculas" value="cifi" />Ciencia Ficcion<br />
+			<input type="checkbox" name="Peliculas" value="romance" />Romance<br />
+			<input type="checkbox" name="Peliculas" value="doc" />Documental<br />
+			<input type="checkbox" name="Peliculas" value="terror" />Terror<br />
+		</fieldset>
+		<button type="submit">Enviar</button>	
+	</form><br />
+
+
+<a href="mailto:omewin@gmail.com">
+Si usted tiene alguna duda, haga click aqui para contactarnos
+</a>		
+</body>
+</html>
