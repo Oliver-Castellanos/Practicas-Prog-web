@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Practica 6</title>
+	<meta name="description" content="Formulario Practica 6" />
+	<meta name="keywords" content="HTML5,Practica_6" />
+	<meta name="author" content="Oliver Castellanos" />
+	<meta charset="UTF-8" />
+	<script src="valida2.js" type="text/javascript"></script>
+	<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+    <script>
+  		$(document).ready(function() {
+    	$("#datepicker").datepicker();
+  		});
+ 	</script>
+
+</head>
+<body>
+	<h1>Formulario</h1>
+	<p>
+	En seguida contuniará con el registro de su perfil.
+	</p>
+	<form method="get" action="Practica6.html" onsubmit="return checkform(this);">
+		<label for="nickname">Nickname</label>
+		<input type="text" id="nickname" name="nickname" disabled="disabled"/><br />
+		<label for="mail">Correo</label>
+		<input type="email" id="mail" name="mail" disabled="disabled"/><br />
+		<fieldset>
+			<legend>Datos del usuario</legend>
+			<label for="nombre">Nombres</label>
+			<input type="text" id="nombre" name="nombre" required="required" placeholder="Ingrese sus nombres" /><br />
+			<label for="apellido">Apellidos</label>
+			<input type="text" id="apellido" name="apellido" required="required" placeholder="Ingrese sus apellidos" /><br />
+			<label for="direc">Direccion</label>
+			<input type="text" id="direc" name="direc" required="required" placeholder="Ingrese su direccion" /><br />
+			<label for="phone" >Telefono</label>
+			<input type="tel" id="phone" name="phone" required="required" placeholder="Ingrese su telefono"/><br />
+			<label for="datepicker">Fecha de nacimiento (día/mes/año)</label> 
+			<input id="datepicker" name="datepicker" /><br />
+			Sexo:<br />
+			<input type="radio" name="sexo" value="Hombre" /> Hombre<br />
+			<input type="radio" name="sexo" value="Hombre" /> Mujer<br /><br />
+			Fotografía a mostrar en el sitio<br />
+			<input id="imagen" type="file" accept="image/gif" /><br /><br />
+			Ingrese de nuevo su contraseña<br />
+			<label for="password">Contraseña</label>
+			<input type="password" id="password" name="password" required="required" placeholder="Ingrese su contraseña" /><br />
+			<label for="password2">Confirme contraseña</label>
+			<input type="password" id="password2" name="password2" required="required" placeholder="Ingrese su contraseña" /><br />
+		</fieldset>
+		<fieldset>
+		<legend>Preferencias</legend>
+		Preferencia de descarga:<br />
+		<select name="prefe">
+			<option value="0">elige una opcion</option>
+			<option value="1">Streaming</option>
+			<option value="2">Descarga directa</option>
+		</select><br />
+		Velocidad de Internet:<br />
+			<select name="prefe">
+				<option value="0">elige una opcion</option>
+				<option value="1">Menos de 500 kbps</option>
+				<option value="2">Menos de 1Mb</option>
+				<option value="3">Menos de 2Mb</option>
+				<option value="4">Mas de 2Mb</option>
+			</select><br />
+		</fieldset>
+		<fieldset>
+			<legend>Extras</legend>
+			Genero favorito:<br />
+			<select name="genero">
+				<option value="0">elige una opcion</option>
+				<option value="1">Acción</option>
+				<option value="2">Terror</option>
+				<option value="3">Comedia</option>
+				<option value="4">Romance</option>
+			</select><br />
+			Seleccione una opcion:<br />
+			<input type="checkbox" name="sop" value="Serie" /> Series<br />
+			<input type="checkbox" name="sop" value="Pelicula" />Peliculas<br /><br />
+		</fieldset>	
+		<button type="submit">Enviar</button>
+		<button type="reset">Limpiar</button>	
+	</form><br />
+
+
+<a href="mailto:omewin@gmail.com">
+Si usted tiene alguna duda, haga click aqui para contactarnos
+</a>		
+</body>
+</html>
