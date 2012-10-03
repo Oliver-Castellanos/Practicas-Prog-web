@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Probando JS con DOM</title>
+	<meta name="description" content="Formulario Practica 5" />
+	<meta name="keywords" content="HTML5,Practica_5" />
+	<meta name="author" content="Oliver Castellanos" />
+	<meta charset="UTF-8" />
+</head>
+<body>
+	<script type="text/javascript">
+		var titulo = document.createElement('h1');
+		var texto = document.createTextNode('Primer Titulo');
+		titulo.appendChild(texto);
+		document.body.appendChild(titulo);
+		
+		var titulo2 = document.createElement('h1');
+		var texto2 = document.createTextNode('Otro Titulo');
+		titulo2.appendChild(texto2);
+		
+		var titulos = document.getElementsByTagName('h1');
+		document.body.insertBefore(titulo2,titulos[0]);
+	</script>
+</body>
+</html>
